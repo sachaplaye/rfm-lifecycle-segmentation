@@ -1,0 +1,5 @@
+data/
+obsidian/
+.DS_Store
+.env
+.venv/
