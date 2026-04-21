@@ -1,1 +1,1 @@
-pandas, numpy, matplotlib, seaborn, scikit-learn, ipykernel, kagglehub, ipywidgets
+pandas, numpy, matplotlib, seaborn, scikit-learn, ipykernel, kagglehub, ipywidgets, pyarrow
