@@ -509,3 +509,6 @@
 100000000,Winter-Peak Purchase,FALSE
 010001001,Winter Season Purchase,TRUE
 100101000,Year-round Purchase,TRUE
+111010110,Year-round Purchase,TRUE
+110011010,Winter Season Purchase,TRUE
+110110010,Year-round Purchase,TRUE
