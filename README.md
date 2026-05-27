@@ -1,27 +1,39 @@
-# B2B Customer Lifecycle & Value Segmentation
+# B2B Online Retail Pack
 
 > **Information Source:** This portfolio uses the [Online Retail II UCI dataset from Kaggle](https://www.kaggle.com/datasets/mashlyn/online-retail-ii-uci/data). For the purpose of the analysis, this dataset is treated as a B2B online retailer, *(testing was done to confirm)*. We extract end-to-end commercial analytics and provide strategic recommendations for senior-leadership. *(Guest checkouts are excluded from this view. See [ETL pipeline](https://github.com/sachaplaye/rfm-lifecycle-segmentation/blob/main/notebooks/1_data_staging.ipynb) for data preparation steps).*
 ---
-## 📑 Table of Contents
+## Contents
 Information is as of close of business 30<sup>th</sup> Nov 2011.
-- [1. Executive Summary & Commercial Recommendations](#executive-summary--commercial-recommendations)
-- [2. High-Level Business Performance](#high-level-business-performance)
-- [3. Customer Value & Lifecycle](#customer-value--lifecycle)
-- [4. Buying Behaviour & Customer Profile](#buying-behaviour--customer-profile)
-- [5. Predictive Analytics & Churn Prevention](#predictive-analytics--churn-prevention)
-
+- [1. Business Report](#business-report)
+- [2. Business Performance](#business-performance)
+- [3. Customer Lifecycle & Value](#customer-lifecycle--value)
+- [4. Buying Behaviour](#buying-behaviour)
+- [5. Churn Prevention & Growth Recommendations](#churn-prevention--growth-recommendations)
 
 ---
 ---
-## Executive Summary & Commercial Recommendations
+## Business Report
 [back to top](#-table-of-contents)
 
-wer
+#### Strong Regional Performance, Mild Customer Growth and a Retention Challenge.
+
+With 4.3k, B2B customers we are currently posting £8.2m net revenue, 1.5% favourable to prior year. say we are regionally active. 
+
+
+
+give summary of the base
+- ie we serve x customers 90% domestic etc
+state net gain
+0 we are doing x/y year over year,
+state recommendations
+churn we need to do this, inlife retention we need to do that, growth we need to do this and seasonal campaigns
+- then we put, see the sections below for more detail
+
 
 
 ---
 ---
-## High-Level Business Performance
+## Business Performance
 [back to top](#-table-of-contents)
 <!-- <img src="notebooks/images/Base_By_Region.png" width="90%"> -->
 #### B2B Customer Base by Region in the last 12 months:
@@ -32,7 +44,7 @@ wer
 
 **Diversify the Base:** With the UK Domestic market generating most of the net revenue but APAC and EMEA providing more revenue on a per customer basis, there is opportunity to allocate targeted acquisition budget toward B2B outbound sales in APAC and EMEA. This would allow us to expand our presence in those markets whilst mitigating the risk of over exposure to any negative macro economic headwinds in the UK market place.
 
-
+---
 #### Customer Net Gain View - Year over Year (YoY):
 ![Base By Region](notebooks/images/B2B_Net_Gain_View.png)
 
@@ -41,63 +53,106 @@ wer
 - **Customer Churn Rate** at 36.1% year over year is high. Key accounts are doing well at only 3.4% Churn. Yet, we are struggling to retain Core accounts and Standard accounts that make up a significant portion of the base. This is coupled with high shrinkage in net retained revenue of 60% for Core accounts and 41% for Standard accounts.
 - **One-Time Purchases:** These one-off transactions make up 23% of the customer base by volume. Net Growth in this segment is flat YoY, in that we are not really making more of these potential customers stick versus prior year.
 
-**We are performing strongly** in terms of Acquisition and Retention of our main customers, with a churn rate of 3.4% and 95% revenue retention with £6.5m yearly net revenue making up 80% of total revenue.
+**We are performing strongly** in terms of Acquisition and Retention of our Key customers, with a churn rate of 3.4% and 95% revenue retention with £6.5m yearly net revenue making up 80% of total revenue.
 
 **We need to target** 823 accounts in decline which contribute (£837k) reduction in yearly revenue. The majority of customers in the declining segment are 435 Core accounts and 297 Key accounts, which are leaking (£661k) of revenue.
 
-**We can look at** One-Time Purchases separately, as we need to gauge value and the return on investment if allocating spend on this cohort.
-
 ---
 ---
-## Customer Value & Lifecycle
+## Customer Lifecycle & Value
 [back to top](#-table-of-contents)
 #### B2B Customer Lifecycle in the last 12 months:
 ![Customer Lifecycle](notebooks/images/RFM_Model.png)
 
-As we show later, 50% of these customers are non-seasonal year round purchasers and 62% traded with us two years running, of which 20% are year on year seasonal repeat purchasers:
+50% of these customers are non-seasonal year round purchasers and 62% traded with us two years running, of which 20% are year on year seasonal repeat purchasers:
 
-- **We have a U-shaped distribution** between Lost and Champions both making up 22% of the base. £5.5m, (68%) of total revenue spend is provided by 933 accounts. If we include Loyal and 'Cannot lose them' customers, we see the business is serving 1.4k customers really well and the other 3k customers contribute relatively little revenue.
-- **There is a big drop from Champion to Loyal**. We need to understand if these £2.6k spend customers are smaller businesses or larger resellers with potential for upsell as this will determine whether we target growth of existing base or acquisition of new customers. We look at this in more detail in the customer profiling summary.
+- **We have a U-shaped distribution** between Lost and Champions both making up 22% of the base. £5.5m, (68%) of total revenue spend is provided by 933 accounts. If we include Loyal and 'Cannot lose them' customers, we see the business is serving 1.4k customers well and the other 3k customers contribute relatively little revenue.
+- **There is a big drop from Champion to Loyal**. We need to understand what the breakdown of the £2.6k spend customers are and if there is potential for upsell. We seem to be focused on customer acquistion here. We look at this in more detail in the buying behaviour summary.
 - **23% are hibernating / Lost:** With 1.1 mth average frequency these 966 customers are made up in majority of the 913 One-Time Purchasers. With an average revenue of £294 per customer contributing £284k overall revenue this may not be worth the marketing spend for reactivation campaigns. 
 
-#### Customer Value:
+---
+#### Size of Account Revenue Generation versus Lifecycle:
 ![Customer Value](notebooks/images/Pareto_Revenue.png)
 
-- **If we split Lifecycle by Pareto distribution** and look at total net revenue, there is a clear revenue risk in the bottom left quadrant for Key and Core accounts.
-- **Between the 'About to Sleep' and 'At Risk'** segments, there is £688k revenue risk for 643 customers who are slipping away.
-- **Combining this with £340k revenue risk** from 116 Key accounts we 'can not lose' and we have a total of over £1m in high-tier revenue currently showing signs of Churn.
-
-**We need to understand the customer profile** and build out a churn risk model first to better serve and target these customers.
+- **If we split Lifecycle by Pareto distribution** and look at total net revenue, we see significant revenue footprint in the lower Frequency and Recency segments for Key and Core accounts.
+- **Between the 'About to Sleep' and 'At Risk'** segments, there is £663k revenue for 655 customers who that did not trade recently.
+- **Combining this with £416k revenue** from 182 accounts in the 'can not lose' segment and we have a total of over £1.1m in high-tier revenue we need to look into.
 
 ---
 ---
-## Buying Behaviour & Customer Profile
+## Buying Behaviour
 [back to top](#-table-of-contents)
 <!-- ![Basket Spread Analysis](notebooks/images/Basket_Spread.png) -->
-#### Basket Density of Customers on the left & Basket Density of Revenue on the right:
-<img src="notebooks/images/Basket_Density.png" width="47%">
-<img src="notebooks/images/Basket_Revenue.png" width="47%">
+#### Historical size of Customer Basket & Revenue. Yellow is more, blue is less:
+<p align="center">
+  <img src="notebooks/images/Basket_Density.png" width="45%" />
+  <img src="notebooks/images/Basket_Revenue.png" width="45%" />
+</p>
 
-**On a per basket basis:** Where the distribution of customers are might not be where our revenue is coming from. We need to check this before profiling our customers to corroborate the findings.
+#### On a per basket basis:
+- We have a concentration of customers on the left in the form of vertical columns who buy narrow.
+- We have one main cluster of customers centred around 10 units of stock depth per item and 20 units of stock breadth per basket.
+- The cluster also has a gradient from top-left, high-volume of narrow stock lines to bottom-right, lower-volume of wide stock lines with barely any high-volume wide-basket customers in the top right quadrant.
 
-Now i just need to say what the above is saying before diving into the customer profiles.
+---
+#### We Quantify this by Basket Breadth & Depth:
 
-oh and spell out the obvious stuff from that scatter like the columns which look like restockers. so i could also say that we are covering basic profiles here since there are clear columns and they should be split out as a type of customer some do more some do less but we don't go to that level of intricacy in this first pass.
+<img src="notebooks/images/Customer_Profile.png" width="100%" />
+<img src="notebooks/images/Profile_This_Year.png" width="100%" />
 
 
-i need to mention this axis split thing between count of custoemr and revnue it is like a bar but we can say they are close in this example so we can use the cuteorm profile matrix i put next. ie just say the custoemr quantity is middle and the revenue goes a bit centre right but is close enough to middle we can use the next matrix to profile customers 
+*We use percentiles to split the basket evenly into groups based on the distribution. We would use K-means clustering (seperate portfolio exercise) and compare back to Firmographics to derive customer profiles but the above works fine for our understanding.*
+- Four behaviours of Big-Diverse, Big-Focused, Mid-Broad and Small-Broad basket spend account for 1.1k of the total 4.3k customers in the last 12 months.
+- Their combined spend make up £5.87M, which is around 89% of total Key Account revenue and 72% of total revenue.
+- The Mid-Focused group with 643 customers make up the second largest cohort accounting for 15% of the base but only generate £800k, which is 10% of the total revenue
 
+---
+#### Customer Churn by purchase behaviour
+
+<img src="notebooks/images/Churn_By_Basket.png" width="100%" />
+
+Looking at Churn profile by purchase behaviour, we see that customers who buy a Narrow range of product lines or a low volume of stock are more likely to Churn than those who buy a wider range and more volume in their basket.
+- Customers who purchase (Medium & Wide), 10-17 units and a range of 28 or more product lines are 1 / 4 times less likely to churn.
+- Customers who purchase (High & Wide), high volume and a range of 28 or more product lines are nearly 1 / 2 times less likely to churn.
 
 ---
 ---
-## Predictive Analytics & Churn Prevention
-[back to top](#-table-of-contents)
+## Churn Prevention & Growth Recommendations
 
-maybe it should be churn since what strategy is there in this other than churn prevention?
+#### Immediate action on 225 High-tier active traders declining -4.5% or more for Customer Retention.
+<img src="notebooks/images/High-Tier_Slipping.png" width="100%" />
 
-can I plot a graph of risk against seasonality
-and also risk against persona
+We have 225 Top-tier accounts that are actively trading and engaged with us but are reducing their spend by 4.5% or more per month. These customers account for £665k of current year revenue.
+- We are leaking revenue and possibly losing trade to competitors on active high-value traders, so intervention on this cohort should be prioritised over the other campaigns.
+- We should do a deep dive into these customers purchase history, any information on returns and delay of delivery that lead to customer dissatisfaction, indicators of internal slow down or switching of stock lines to other competitors.
+- These accounts should then be contacted directly by our account managers for health check with the additional pre-call intelligence.
 
+---
+#### 270 Customers in Decline for Lapsed & Winback Campaigns
+<img src="notebooks/images/Lapsed_Decliners.png" width="100%" />
+
+These warrant proactive outreach with an offer. All 270 customers with less than -3% decline in monthly revenue qualify for Lapsed (1 quarterly restock cycle) and Winback (>=2 cycles) promotional campaigns tailored to their basket behaviour.
+
+- 114 Key accounts making up £184k, (£1.6k average spend per customer) get a personal call from account managers. 
+- 156 Core accounts making up £89k, (£0.6k average spend per customer) get a targetted email with offer linked to their purchase behaviour.
+
+---
+#### 171 Growing Customers with Upsell Opportunity
+<img src="notebooks/images/growing_customers.png" width="100%" />
+
+We have 171 High-Tier customers generating £960k net revenue, who are growing more than 4.5% per month. These are filtered by buying behaviour of medium / high for narrow baskets or low quantity for wide baskets. 
+- However, based on the Churn Profile by purchase behaviour results section above. They are in the higher Churn bracket of around 17-18%.
+- We should look into how we can upsell these customers to widen their basket and increase quantity of purchase as this will likely improve churn rate for this cohort and grow revenue.
+
+---
+#### 385 Churned customers year over year for Reactivation Campaign
+
+<img src="notebooks/images/YoY_Tier_Change.png" width="90%" />
+
+The above view shows the change in Value Tier year over year to identify larger historical customers who now trade less.
+- Of 1.5k Churned customers 53 are key accounts with prior year spend of £279k and average spend of £5.3k per customer. These can receive a relationship recovery call by an account manager and unanswered calls can receive a follow-up manual email or direct mail.
+- 332 Core Accounts with prior year spend of £401k averaging £1.2k per customer can be placed into a targetted email journey sequence. If they click on links or visited our website several times and have shown intent it could trigger a notification for an account manager to call them. We can include a scheduling link in the email if they want to book a catch-up call.
+- 1,145 Churned customers with prior year spend of £318k averaging £277 per customer. We push these through fully automated email marketing and self serve.
 
 ---
 ---
