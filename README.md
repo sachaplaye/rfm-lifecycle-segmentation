@@ -8,13 +8,13 @@
 ## Business Report
 #### The business is experiencing Strong Regional Performance, Mild Customer Growth and a Retention Challenge.
 
-With 4.3k, B2B customers we are currently posting £8.2m net revenue, 1.5% favourable to prior year. UK Domestic makes up 90% of of our customers and 83% of total revenue. In our international base APAC customers average 2.5 times more value than UK Domestic and EMEA average 40% more value.
+With 4.3k, B2B customers we are currently posting £8.2m net revenue, 1.5% favourable to prior year. UK Domestic makes up 90% of our customers and 83% of total revenue. In our international base APAC customers average 2.5 times more value than UK Domestic and EMEA average 40% more value.
 
 Looking at customer lifecycle the business is highly Acquisition focused. 1.3k customers account for the majority share of revenue with a steep drop off from our Champions down the ladder to Lost Business.
 
 Stability of the base is currently driven by our Key accounts (£5.9k spend per customer) and customers with a wider basket who purchase more stock are up to 50% less likely to churn then those buying less stock or a narrower product range. Whilst Churn rate of Key accounts is low at 3.4% and net revenue retained (NRR) at 95%, the rest of our customers have high churn rate (>19%) and our Core accounts are leaking revenue with 60% net revenue retained year over year. Furthermore our in-life customer view shows a contraction of 3.2% year over year for existing customer spend.
 
-In summary Acquisition is driving most of the business forward with UK Domestic making up our core Market. With an overall NRR of 84% for our existing customers, any drop in sales will expose the business.
+**In summary:** Acquisition is driving most of the business forward with UK Domestic making up our core Market. With an overall NRR of 84% for our existing customers, any drop in sales will expose the business.
 
 #### Recommendations:
 - **Retention:** We have 225 Top-tier account traders that are actively engaged with us, generate £665k revenue but are declining by more than -4.5% revenue per month. These customers should be contacted for a health check call by our account managers pre-armed with any information on customer dissatisfaction, internal slow down or switching of stock lines to competitors.
@@ -163,7 +163,7 @@ The above view shows the change in Value Tier year over year to identify larger 
 ---
 #### Data Integrity
 [back to contents](#contents)
-- Any purchases made after 30<sup>th</sup> Nov 2011 are removed from this view to get a two year window. We note there maybe some data missing from before 07:00 on 1<sup>st</sup> Dec 2009 due to data set cut off but analysis shows it will be minimal.
+- Any purchases made after 30<sup>th</sup> Nov 2011 are removed from this view to get a two year window. We note there may be some data missing from before 07:00 on 1<sup>st</sup> Dec 2009 due to data set cut off but analysis shows it will be minimal.
 - This is a product only view which excludes re-keys, postage fees, additional charges, warhouse stock changes, dummy accounts used for accounting purposes and such like.
 - We removed guest accounts that make up several million in revenue (over two years) from this analysis as they have no account number to distinguish which invoices belong together.
 
