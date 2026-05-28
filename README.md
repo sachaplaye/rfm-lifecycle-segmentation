@@ -106,7 +106,7 @@ In summary Acquisition is driving most of the business forward with UK Domestic 
 <img src="notebooks/images/Profile_This_Year.png" width="100%" />
 
 
-*We use percentiles to split the basket evenly into groups based on the distribution. We would use K-means clustering (separate portfolio exercise) and compare back to Firmographics to derive customer profiles but the above works fine for our sketch on a napkin understanding.*
+*We use percentiles to split the basket evenly into groups based on the distribution. We would use K-means clustering (separate portfolio exercise) and compare back to Firmographics to derive customer profiles but the above works fine for our understanding.*
 - Four behaviours of Big-Diverse, Big-Focused, Mid-Broad and Small-Broad basket spend account for 1.1k of the total 4.3k customers in the last 12 months.
 - Their combined spend make up £5.87M, which is around 89% of total Key Account revenue and 72% of total revenue.
 - The Mid-Focused group with 643 customers make up the second largest cohort accounting for 15% of the base but only generate £800k, which is 10% of the total revenue
