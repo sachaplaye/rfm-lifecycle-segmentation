@@ -1,40 +1,45 @@
 # B2B Online Retail Pack
 
 > **Information Source:** This portfolio uses the [Online Retail II UCI dataset from Kaggle](https://www.kaggle.com/datasets/mashlyn/online-retail-ii-uci/data). For the purpose of the analysis, this dataset is treated as a B2B online retailer, *(testing was done to confirm)*. We extract end-to-end commercial analytics and provide strategic recommendations for senior-leadership. *(Guest checkouts are excluded from this view. See [ETL pipeline](https://github.com/sachaplaye/rfm-lifecycle-segmentation/blob/main/notebooks/1_data_staging.ipynb) for data preparation steps).*
+
+*Information is as of close of business 30<sup>th</sup> Nov 2011.*
+
+---
+## Business Report
+#### The business is experiencing Strong Regional Performance, Mild Customer Growth and a Retention Challenge.
+
+With 4.3k, B2B customers we are currently posting £8.2m net revenue, 1.5% favourable to prior year. UK Domestic makes up 90% of of our customers and 83% of total revenue. In our international base APAC customers average 2.5 times more value than UK Domestic and EMEA average 40% more value.
+
+Looking at customer lifecycle the business is highly Acquisition focused. 1.3k customers account for the majority share of revenue with a steep drop off from our Champions down the ladder to Lost Business.
+
+Stability of the base is currently driven by our Key accounts (£5.9k spend per customer) and customers with a wider basket who purchase more stock are up to 50% less likely to churn then those buying less stock or a narrower product range. Whilst Churn rate of Key accounts is low at 3.4% and net revenue retained (NRR) at 95%, the rest of our customers have high churn rate (>19%) and our Core accounts are leaking revenue with 60% net revenue retained year over year. Furthermore our in-life customer view shows a contraction of 3.2% year over year for existing customer spend.
+
+In summary Acquisition is driving most of the business forward with UK Domestic making up our core Market. With an overall NRR of 84% for our existing customers, any drop in sales will expose the business.
+
+#### Recommendations:
+- **Retention:** We have 225 Top-tier account traders that are actively engaged with us, generate £665k revenue but are declining by more than -4.5% revenue per month. These customers should be contacted for a health check call by our account managers pre-armed with any information on customer dissatisfaction, internal slow down or switching of stock lines to competitors.
+- **Lapsed & Winback:** 114 Key accounts make up £184k. They are declining by more than -3% in revenue and have missed 1 to 2 quarterly restock cycles. These can receive a personal call from account managers. 156 Core accounts make up £89k and can be targeted with an email offer tied to their purchase behaviour. (Core accounts average £567 spend per customer, which is more suited for an email marketing campaign).
+- **Upsell Opportunity:** 171 Top-tier account customers who generate £960k are actively trading and growing at more than 4.5% per month. However, these customers show purchase behaviours of either wide basket but low volume or they are buying narrow product range. There is opportunity to upsell these customers to widen their basket and increase quantity of purchase, as this will likely improve churn rate for this cohort and grow revenue. (Historical evidence shows the lowest churn rate for this purchase behaviour).
+- **Re-activation:** Of 1.5k Churned customers year over year, 53 are Key accounts with prior year spend of £279k. They averaged £5.3k spend per customer and can recieve a relationship recovery call by account managers, with personal email follow-up for un-aswered calls. 332 Core accounts with yearly spend of £401k, (£1.2k per customer) can receive an email and trigger a notification to account managers if they have shown intent. The rest of the 1,145 Standard accounts with prior year spend of £318k, (averaging £277 per customer) can be pushed through automated email marketing and self serve.
+- **Expand International:** Average spend of an APAC customer is 2.5 times higher than a UK Domestic customer. EMEA is 40% higher. There is opportunity to allocate targeted acquisition budget toward B2B outbound sales in APAC and EMEA.
+
+
+
+*See the "Churn Prevention & Growth" Section at the bottom of this report for the backing behind the recommendations*
+
+
 ---
 ## Contents
-Information is as of close of business 30<sup>th</sup> Nov 2011.
 - [1. Business Report](#business-report)
 - [2. Business Performance](#business-performance)
 - [3. Customer Lifecycle & Value](#customer-lifecycle--value)
 - [4. Buying Behaviour](#buying-behaviour)
 - [5. Churn Prevention & Growth Recommendations](#churn-prevention--growth-recommendations)
-
----
----
-## Business Report
-[back to top](#-table-of-contents)
-
-#### Strong Regional Performance, Mild Customer Growth and a Retention Challenge.
-
-With 4.3k, B2B customers we are currently posting £8.2m net revenue, 1.5% favourable to prior year. say we are regionally active. 
-
-
-
-give summary of the base
-- ie we serve x customers 90% domestic etc
-state net gain
-0 we are doing x/y year over year,
-state recommendations
-churn we need to do this, inlife retention we need to do that, growth we need to do this and seasonal campaigns
-- then we put, see the sections below for more detail
-
-
-
+- [6. Data Integrity](#data-integrity)
 ---
 ---
 ## Business Performance
-[back to top](#-table-of-contents)
+[back to contents](#contents)
 <!-- <img src="notebooks/images/Base_By_Region.png" width="90%"> -->
 #### B2B Customer Base by Region in the last 12 months:
 ![Base By Region](notebooks/images/Base_By_Region.png)
@@ -42,7 +47,7 @@ churn we need to do this, inlife retention we need to do that, growth we need to
 - **UK Domestic** provides a high-volume foundation for the business, accounting for 90% of the customer base and 83% of total revenue.
 - **International View:** While customer volume is lower, both APAC and EMEA deliver significantly higher average revenue per customer. If we strip out whale accounts (>£30k annual spend), APAC averages £3.9k per customer (2.5 times the UK average of £1.4k). EMEA, which accounts for 9% of the customer base by volume and 15% of total revenue, provides 40% more revenue per customer (at £2.0k).
 
-**Diversify the Base:** With the UK Domestic market generating most of the net revenue but APAC and EMEA providing more revenue on a per customer basis, there is opportunity to allocate targeted acquisition budget toward B2B outbound sales in APAC and EMEA. This would allow us to expand our presence in those markets whilst mitigating the risk of over exposure to any negative macro economic headwinds in the UK market place.
+**Expand the Base:** With the UK Domestic market generating most of the net revenue but APAC and EMEA providing more revenue on a per customer basis, there is opportunity to allocate targeted acquisition budget toward B2B outbound sales in APAC and EMEA. This would allow us to expand our presence in those markets whilst mitigating the risk of over exposure to any negative macro economic headwinds in the UK market place.
 
 ---
 #### Customer Net Gain View - Year over Year (YoY):
@@ -60,7 +65,7 @@ churn we need to do this, inlife retention we need to do that, growth we need to
 ---
 ---
 ## Customer Lifecycle & Value
-[back to top](#-table-of-contents)
+[back to contents](#contents)
 #### B2B Customer Lifecycle in the last 12 months:
 ![Customer Lifecycle](notebooks/images/RFM_Model.png)
 
@@ -81,7 +86,7 @@ churn we need to do this, inlife retention we need to do that, growth we need to
 ---
 ---
 ## Buying Behaviour
-[back to top](#-table-of-contents)
+[back to contents](#contents)
 <!-- ![Basket Spread Analysis](notebooks/images/Basket_Spread.png) -->
 #### Historical size of Customer Basket & Revenue. Yellow is more, blue is less:
 <p align="center">
@@ -101,7 +106,7 @@ churn we need to do this, inlife retention we need to do that, growth we need to
 <img src="notebooks/images/Profile_This_Year.png" width="100%" />
 
 
-*We use percentiles to split the basket evenly into groups based on the distribution. We would use K-means clustering (seperate portfolio exercise) and compare back to Firmographics to derive customer profiles but the above works fine for our understanding.*
+*We use percentiles to split the basket evenly into groups based on the distribution. We would use K-means clustering (separate portfolio exercise) and compare back to Firmographics to derive customer profiles but the above works fine for our sketch on a napkin understanding.*
 - Four behaviours of Big-Diverse, Big-Focused, Mid-Broad and Small-Broad basket spend account for 1.1k of the total 4.3k customers in the last 12 months.
 - Their combined spend make up £5.87M, which is around 89% of total Key Account revenue and 72% of total revenue.
 - The Mid-Focused group with 643 customers make up the second largest cohort accounting for 15% of the base but only generate £800k, which is 10% of the total revenue
@@ -118,7 +123,7 @@ Looking at Churn profile by purchase behaviour, we see that customers who buy a 
 ---
 ---
 ## Churn Prevention & Growth Recommendations
-
+[back to contents](#contents)
 #### Immediate action on 225 High-tier active traders declining -4.5% or more for Customer Retention.
 <img src="notebooks/images/High-Tier_Slipping.png" width="100%" />
 
@@ -134,29 +139,32 @@ We have 225 Top-tier accounts that are actively trading and engaged with us but 
 These warrant proactive outreach with an offer. All 270 customers with less than -3% decline in monthly revenue qualify for Lapsed (1 quarterly restock cycle) and Winback (>=2 cycles) promotional campaigns tailored to their basket behaviour.
 
 - 114 Key accounts making up £184k, (£1.6k average spend per customer) get a personal call from account managers. 
-- 156 Core accounts making up £89k, (£0.6k average spend per customer) get a targetted email with offer linked to their purchase behaviour.
+- 156 Core accounts making up £89k, (£0.6k average spend per customer) get a targeted email with offer linked to their purchase behaviour.
 
 ---
 #### 171 Growing Customers with Upsell Opportunity
 <img src="notebooks/images/growing_customers.png" width="100%" />
 
-We have 171 High-Tier customers generating £960k net revenue, who are growing more than 4.5% per month. These are filtered by buying behaviour of medium / high for narrow baskets or low quantity for wide baskets. 
+We have 171 High-Tier customers generating £960k net revenue, who are growing more than 4.5% per month. These are filtered on buying behaviour of medium / high for narrow baskets or low quantity for wide baskets. 
 - However, based on the Churn Profile by purchase behaviour results section above. They are in the higher Churn bracket of around 17-18%.
 - We should look into how we can upsell these customers to widen their basket and increase quantity of purchase as this will likely improve churn rate for this cohort and grow revenue.
 
 ---
 #### 385 Churned customers year over year for Reactivation Campaign
 
-<img src="notebooks/images/YoY_Tier_Change.png" width="90%" />
+<img src="notebooks/images/YoY_Tier_Change.png" width="100%" />
 
 The above view shows the change in Value Tier year over year to identify larger historical customers who now trade less.
 - Of 1.5k Churned customers 53 are key accounts with prior year spend of £279k and average spend of £5.3k per customer. These can receive a relationship recovery call by an account manager and unanswered calls can receive a follow-up manual email or direct mail.
-- 332 Core Accounts with prior year spend of £401k averaging £1.2k per customer can be placed into a targetted email journey sequence. If they click on links or visited our website several times and have shown intent it could trigger a notification for an account manager to call them. We can include a scheduling link in the email if they want to book a catch-up call.
-- 1,145 Churned customers with prior year spend of £318k averaging £277 per customer. We push these through fully automated email marketing and self serve.
+- We can put 332 Core Accounts with prior year spend of £401k averaging £1.2k per customer into a targeted email journey. If they click on links or visited our website several times and have shown intent it could trigger a notification for an account manager to call them. We can include a scheduling link in the email if they want to book a catch-up call.
+- 1,145 Churned customers with prior year spend of £318k averaging £277 per customer. We can push these through fully automated email marketing and self serve.
 
 ---
 ---
-*NB this is a product only view which excludes re-keys, postage fees, additional charges and such like.* PUT ALL THE DATA CAVEATS HERE
-- This is a figure it all out yourself dataset, normally I figure it out first, then I reach out to the business to understand all the intricacies and dynamics I might have missed before I try making assumptions on things, so this work is a guideline but might not be totally on point. review this ... coallesce the figure and people bit
+#### Data Integrity
+[back to contents](#contents)
+- Any purchases made after 30<sup>th</sup> Nov 2011 are removed from this view to get a two year window. We note there maybe some data missing from before 07:00 on 1<sup>st</sup> Dec 2009 due to data set cut off but analysis shows it will be minimal.
+- This is a product only view which excludes re-keys, postage fees, additional charges, warhouse stock changes, dummy accounts used for accounting purposes and such like.
+- We removed guest accounts that make up several million in revenue (over two years) from this analysis as they have no account number to distinguish which invoices belong together.
 
 ---
