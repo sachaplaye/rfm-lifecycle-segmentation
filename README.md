@@ -6,7 +6,9 @@
 
 ---
 ## Business Report
-#### The business is experiencing Strong Regional Performance, Mild Customer Growth and a Retention Challenge.
+<img src="notebooks/images/view_card.png" width="100%" />
+
+### The business is experiencing Strong Regional Performance, Mild Customer Growth and a Retention Challenge.
 
 With 4.3k, B2B customers we are currently posting £8.2m net revenue, 1.5% favourable to prior year. UK Domestic makes up 90% of our customers and 83% of total revenue. In our international base APAC customers average 2.5 times more value than UK Domestic and EMEA average 40% more value.
 
@@ -16,7 +18,7 @@ Stability of the base is currently driven by our Key accounts (£5.9k spend per 
 
 **In summary:** Acquisition is driving most of the business forward with UK Domestic making up our core Market. With an overall NRR of 84% for our existing customers, any drop in sales will expose the business.
 
-#### Recommendations:
+### Recommendations:
 - **Retention:** We have 225 Top-tier account traders that are actively engaged with us, generate £665k revenue but are declining by more than -4.5% revenue per month. These customers should be contacted for a health check call by our account managers pre-armed with any information on customer dissatisfaction, internal slow down or switching of stock lines to competitors.
 - **Lapsed & Winback:** 114 Key accounts make up £184k. They are declining by more than -3% in revenue and have missed 1 to 2 quarterly restock cycles. These can receive a personal call from account managers. 156 Core accounts make up £89k and can be targeted with an email offer tied to their purchase behaviour. (Core accounts average £567 spend per customer, which is more suited for an email marketing campaign).
 - **Upsell Opportunity:** 171 Top-tier account customers who generate £960k are actively trading and growing at more than 4.5% per month. However, these customers show purchase behaviours of either wide basket but low volume or they are buying narrow product range. There is opportunity to upsell these customers to widen their basket and increase quantity of purchase, as this will likely improve churn rate for this cohort and grow revenue. (Historical evidence shows the lowest churn rate for higher volume wider basket purchase behaviour).
@@ -80,7 +82,7 @@ Stability of the base is currently driven by our Key accounts (£5.9k spend per 
 ![Customer Value](notebooks/images/Pareto_Revenue.png)
 
 - **If we split Lifecycle by Pareto distribution** and look at total net revenue, we see significant revenue footprint in the lower Frequency and Recency segments for Key and Core accounts.
-- **Between the 'About to Sleep' and 'At Risk'** segments, there is £663k revenue for 655 customers who that did not trade recently.
+- **Between the 'About to Sleep' and 'At Risk'** segments, there is £663k revenue for 655 customers who did not trade recently.
 - **Combining this with £416k revenue** from 182 accounts in the 'can not lose' segment and we have a total of over £1.1m in high-tier revenue we need to look into.
 
 ---
@@ -136,7 +138,7 @@ We have 225 Top-tier accounts that are actively trading and engaged with us but 
 #### 270 Customers in Decline for Lapsed & Winback Campaigns
 <img src="notebooks/images/Lapsed_Decliners.png" width="100%" />
 
-These warrant proactive outreach with an offer. All 270 customers with less than -3% decline in monthly revenue qualify for Lapsed (1 quarterly restock cycle) and Winback (>=2 cycles) promotional campaigns tailored to their basket behaviour.
+These warrant proactive outreach with an offer. All 270 customers with less than -3% decline in monthly revenue qualify for Lapsed (1 quarte rly restock cycle) and Winback (>=2 cycles) promotional campaigns tailored to their basket behaviour.
 
 - 114 Key accounts making up £184k, (£1.6k average spend per customer) get a personal call from account managers. 
 - 156 Core accounts making up £89k, (£0.6k average spend per customer) get a targeted email with offer linked to their purchase behaviour.
@@ -164,7 +166,7 @@ The above view shows the change in Value Tier year over year to identify larger 
 #### Data Integrity
 [back to contents](#contents)
 - Any purchases made after 30<sup>th</sup> Nov 2011 are removed from this view to get a two year window. We note there may be some data missing from before 07:00 on 1<sup>st</sup> Dec 2009 due to data set cut off but analysis shows it will be minimal.
-- This is a product only view which excludes re-keys, postage fees, additional charges, warhouse stock changes, dummy accounts used for accounting purposes and such like.
+- This is a product only view which excludes re-keys, postage fees, additional charges, warehouse stock changes, dummy accounts used for accounting purposes and such like.
 - We removed guest accounts that make up several million in revenue (over two years) from this analysis as they have no account number to distinguish which invoices belong together.
 
 ---
